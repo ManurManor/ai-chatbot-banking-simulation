@@ -33,4 +33,4 @@ Steps:
    python src/simulation.py
 
 
-This repository supports a Master's dissertation submitted in fulfilment of degree requirements.
+
