@@ -22,4 +22,15 @@ The code in this repository is provided to support transparency and reproducibil
 [Manuel Menor]
 
 ## Academic Context
+## How to Run the Simulation
+The simulation is implemented in Python using the SimPy library.
+
+Steps:
+1. Install Python 3
+2. Install SimPy:
+   pip install simpy
+3. Run the simulation:
+   python src/simulation.py
+
+
 This repository supports a Master's dissertation submitted in fulfilment of degree requirements.
