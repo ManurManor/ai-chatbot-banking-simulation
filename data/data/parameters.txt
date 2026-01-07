@@ -1,0 +1,22 @@
+Simulation Input Parameters
+
+Arrival process:
+- Customer arrivals follow a Poisson process
+- Average inter-arrival time: 3 minutes
+
+Service mechanism:
+- AI chatbot service times follow an exponential distribution
+  Average service time: 2 minutes
+- Human agent service times follow an exponential distribution
+  Average service time: 5 minutes
+
+Resources:
+- Number of chatbot servers: 5
+- Number of human agents: 2
+
+Chatbot adoption rate:
+- Base scenario: 60% of customers routed to chatbot
+- Alternative scenarios adjust this value
+
+Simulation horizon:
+- 8-hour operating day (480 minutes)
