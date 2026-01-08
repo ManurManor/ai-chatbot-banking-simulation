@@ -1,52 +1,72 @@
-Project Description
-Retail banks increasingly use AI chatbots to handle routine customer enquiries. However, the effect of chatbot adoption on service performance is not always clear.
-This simulation models a bank customer service system where customers are routed to either AI chatbots or human agents based on a predefined adoption rate.
+# Bank Customer Service Chatbot Simulation
 
-The model focuses on evaluating:
-Customer waiting times
-Resource utilisation
-Customer satisfaction (proxy measure)
+This repository contains a Python-based Discrete Event Simulation (DES) model developed as part of a Master's dissertation. The simulation evaluates the impact of AI chatbot adoption on customer service performance in a retail banking environment.
 
+---
 
-Methodology
-Approach: Quantitative simulation-based analysis
-Technique: Discrete Event Simulation
-Language: Python
-Library: SimPy
+## Project Description
 
+Retail banks increasingly use AI chatbots to handle routine customer enquiries. This simulation models a bank customer service system where customers are routed to either AI chatbots or human agents based on a predefined adoption rate. The objective is to assess how chatbot adoption affects waiting time, resource utilisation, and customer satisfaction.
 
-Key assumptions:
-Customer arrivals follow a Poisson process
-Service times follow exponential distributions
-Customers are probabilistically routed to chatbots or human agents
-Customer satisfaction is estimated using a proxy based on waiting time
+---
 
+## Methodology
 
-Simulation Parameters
-Simulation time: 8 hours (480 minutes)
-Chatbot adoption rate: 60%
-Average arrival rate: 1 customer every 3 minutes
-Average chatbot service time: 2 minutes
-Average human service time: 5 minutes
+This study adopts a quantitative, simulation-based approach using Discrete Event Simulation. The model is implemented in Python using the SimPy library.
 
+Key assumptions include:
 
-Performance Measures
+* Customer arrivals follow a Poisson process
+* Service times follow exponential distributions
+* Customers are probabilistically routed to chatbots or human agents
+* Customer satisfaction is estimated using a proxy based on waiting time
 
-The simulation outputs the following metrics:
+---
 
-Average customer waiting time
+## Simulation Parameters
 
-Chatbot utilisation (proxy)
+* Simulation duration: 480 minutes (8 hours)
+* Chatbot adoption rate: 60%
+* Average arrival rate: 1 customer every 3 minutes
+* Average chatbot service time: 2 minutes
+* Average human service time: 5 minutes
+* Resources: 5 chatbots and 2 human agents
 
-Human agent utilisation (proxy)
-Average customer satisfaction score (out of 10)
+---
 
-How to Run the Simulation
-Install dependencies:
+## Performance Measures
+
+The simulation reports:
+
+* Average customer waiting time
+* Chatbot utilisation (proxy)
+* Human agent utilisation (proxy)
+* Average customer satisfaction score
+
+---
+
+## How to Run
+
+1. Install SimPy:
+
+```bash
 pip install simpy
-Run the simulation:
-python simulation.py
-The results will be printed directly to the console.
+```
 
-Reproducibility
-All key parameters are defined at the top of the script and can be easily modified to test alternative scenarios.
+2. Run the simulation:
+
+```bash
+python simulation.py
+```
+
+Results are printed to the console.
+
+---
+
+## Reproducibility
+
+All key parameters are defined at the top of the script and can be modified to test different scenarios.
+
+
+
+
